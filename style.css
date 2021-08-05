@@ -126,19 +126,22 @@ section .title::after {
 .home .home-content .text-1 {
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
+  margin-left: 840px;
 }
 .home .home-content .text-2 {
   font-size: 40px;
   margin: 5px 0;
+  margin-left: 840px;
 }
 .home .home-content a {
-  display: inline-block;
+  display: block;
   background: crimson;
   color: #fff;
   font-size: 25px;
+  width: 260px;
   padding: 12px 36px;
   margin-top: 20px;
+  margin-left: 840px;
   font-weight: 400;
   border-radius: 6px;
   border: 2px solid crimson;
@@ -148,7 +151,13 @@ section .title::after {
   color: crimson;
   background: none;
 }
-
+/*social media*/
+.icon {
+  position: absolute;
+  top: 870px;
+  height: 50px;
+  width: 75px;
+}
 /* education section  */
 aside {
   perspective: 800px;
@@ -194,13 +203,6 @@ aside div img {
 
 .edu .title::after {
   content: "By Now";
-}
-/*social media*/
-.icon {
-  position: absolute;
-  top: 940px;
-  height: 50px;
-  width: 75px;
 }
 /* Project section*/
 .teams .title::after {
