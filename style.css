@@ -1,0 +1,279 @@
+/*google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* all similar content */
+section {
+  padding: 40px 0;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* navbar*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar {
+  padding: 15px 0;
+  background-color: rgba(255, 83, 118, 0.5);
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: crimson;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+/* home*/
+.home {
+  display: flex;
+  background: url("images/pp1.jpeg") no-repeat center;
+  height: 100vh;
+  color: crimson;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-2 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: crimson;
+  background: none;
+}
+
+/* education section  */
+aside {
+  perspective: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+aside div {
+  height: 300px;
+  width: 500px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+aside div img {
+  height: 300px;
+  width: 500px;
+}
+.side-a,
+.side-b {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.side-a {
+  z-index: 1;
+}
+.side-b {
+  transform: rotateY(180deg);
+  font-size: 1.5rem;
+  background-color: palegoldenrod;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrap {
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.wrap:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+/* skills section styling */
+
+.edu .title::after {
+  content: "By Now";
+}
+/*social media*/
+.icon {
+  position: absolute;
+  top: 940px;
+  height: 50px;
+  width: 75px;
+}
+/* Project section*/
+.teams .title::after {
+  content: "My Major Projects";
+}
+figure div {
+  height: 75px;
+  width: 10%;
+  background-color: crimson;
+  border: 2px solid black;
+  transition: 2s;
+  margin-bottom: 12px;
+}
+figure div:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+figure div:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+figure div:nth-of-type(3) {
+  transition-timing-function: easeInOutCubic;
+}
+figure:hover div {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(19, 18, 29);
+}
+/* contact section */
+.contact .title::after {
+  content: "get in touch";
+}
+.btn {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+/* footer section */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+/*contact form*/
+.formdesign input {
+  width: 300px;
+  padding: 12px 20px;
+  border: 1px solid blue;
+  margin: 14px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.left_set {
+  float: left;
+}
+.formerror {
+  color: red;
+}
